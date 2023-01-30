@@ -1,0 +1,559 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+   font-family: 'Josefin Sans', sans-serif; 
+   
+}
+:root {
+    --primary-color: #da9b68;
+    --gradient: linear-gradient( #da9b68, white);
+
+    --transition-1: 0.25s ease;
+    --transition-2: 0.5s ease;
+}
+
+body {
+    background-color:#f3f3f3;
+    overflow-x: hidden; 
+}
+html::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 5rem;
+}
+
+section {
+    padding: 50px 100px;
+    
+}
+
+
+.hero-section {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container {
+    width: 20%;
+    position: relative;
+    transition: transform 500ms;
+    display: block;
+}
+
+.container img {
+    width: 100%;
+    opacity: 1;
+    height: auto;
+}
+
+.row .container:focus,
+.row .container:hover {
+    transform: scale(1.5);
+    z-index: 1;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    min-height: 8vh;
+   }
+   
+   
+   
+   .logo { 
+       font-family: 'Yeseva One', cursive;
+      font-size: 64px;
+       color: white;   
+   }
+   
+   
+   a h4 {
+       color: white;
+       font-family: 'Coiny', cursive;
+   }
+   
+   
+   .navbar {
+       display: flex;
+   }
+   
+   .navbar li {
+       position: relative;
+   }
+   
+   .navbar a {
+       font-size: 1.6rem;
+       padding: 20px 40px;
+       color: white;
+       font-weight: 700;
+       text-transform: uppercase;
+   }
+   
+   .navbar a::after {
+       content: "";
+       width: 0;
+       height: 3px;
+       background: var(--gradient);
+       position: absolute;
+       bottom: -10px;
+       left: 0;
+       transition: 0.5s;
+   }
+   
+   .navbar a:hover::after {
+       width: 100%;
+   }
+   
+   #menu-icon {
+       font-size: 24px;
+       cursor: pointer;
+       z-index: 10001;
+       display: none;  
+   }
+  
+   .btn {
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    height: var(--height, 45px);
+    padding-inline: var(--padding-inline, 35px);
+    transition: var(--transition-1);
+    text-transform: uppercase;
+  }
+
+  
+  .btn-hover {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  }
+
+  
+  .btn-hover::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 20px;
+  width: 1px;
+  height: 1px;
+  transform: translate(-50%, 51%) scale(var(--scale, 1));
+  border-radius: 50%;
+  background-color: orange;
+  z-index: -1;
+  transition: var(--transition-2);
+  }
+
+  
+  .btn-hover:is(:hover, :focus)::after { --scale: 500; }
+
+  .full-img {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+  }
+
+  .full-img img {
+    width: 90%;
+    max-width: 500px;
+  }
+
+  .full-img span {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+
+  main {
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 50px 8%;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+    margin-right: 3rem;
+}
+
+.gallery img {
+    width: 100%;
+}
+
+.gallery img:hover {
+    transform: scale(0.8) rotate(-15deg);
+    border-radius: 20px;
+    box-shadow: 0 32px 75px rgba(68, 77, 136, 0.2);
+}
+
+
+  .fot-container {
+    max-width: 1170px;
+    margin: auto;
+    }
+    
+    .fot-row {
+    display: flex;
+    flex-wrap: wrap;
+    }
+    
+    .footer {
+     background-color: #24262b; 
+    padding: 70px 0;
+    line-height: 1.5; 
+    }
+    .footer-col {
+    width: 25%;
+    padding: 0 15px;
+    }
+    
+    .footer-col h4 {
+    font-size: 18px;
+    color:#ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+    }
+    
+    .footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color:var(--primary-color); 
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+    }
+    
+    .footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+    }
+    
+    .footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+    }
+    
+    .footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+    }
+    
+    .footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+    }
+    
+    .footer-col .social-links i {
+    margin-top: 10px;
+    }
+    
+    .footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+    }
+    
+    ul {
+    list-style: none;
+    }
+    
+
+@media (max-width: 1920px) {
+
+   .navbar a {
+       font-size: 1rem;
+       padding-left: 40px;
+       
+   }
+
+   .logo {
+    font-size: 48px;
+   }
+   
+}
+
+@media (max-width: 1640px) {
+    .navbar a {
+        padding-left: 40px;
+        
+    }
+
+    .logo { 
+        font-family: 'Yeseva One', cursive;
+       font-size: 48px;
+       margin-top: 0.5rem;
+        color: white;   
+    }
+
+    .gallery {
+        margin-right: 0rem;
+    }
+
+}
+
+
+@media (max-width: 1110px) {
+
+    .navbar a {
+        padding-left: 0px; 
+        padding: 6px 20px;
+        width: 100px;
+    }
+
+}
+@media (max-width: 920px) {   
+    body {
+        overflow-x: hidden; 
+    }
+
+       section {
+      padding: 50px 14px;
+     }
+     .container {
+         width: 100%;
+     }
+    
+       .hero-section {
+           margin-top: 3rem;
+           margin-bottom: 0;
+       }
+      
+       .navbar {
+        position: fixed;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: black;
+        display: flex;
+        width: 70%;
+        
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 90px;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        z-index: 1000;
+        
+         }
+
+         .navbar a {
+            float: none;
+            padding-left: 0px;
+            letter-spacing: 3px;
+            font-size: 14px;
+            font-weight: bold; 
+        }
+    
+         .navbar li {
+             opacity: 0;
+             padding-bottom: 26px;
+         }
+         
+         #menu-icon {
+            display: block;
+            cursor: pointer;
+            position: absolute;
+            left: 8%;
+            top: 36%;
+            color: white;
+        }
+
+        .logo {
+            display: block;
+         margin-left: auto;
+         margin-right: auto;
+           font-size: 40px;
+        }
+
+        .btn {
+          visibility: hidden;
+        }
+    
+       
+         header {
+             height: 60px;
+             width: 100%;
+             top: 0;
+             right: 0;
+             z-index: 1000;
+             display: flex;
+             position: fixed;
+             align-items: center;
+             justify-content: space-between;
+             background: black;
+             color: white;
+             padding: 0.938em 3.75em; 
+            }
+
+            
+    
+         .nav-active {
+             transform: translateX(0%);
+         }
+ 
+            
+
+        main {
+            width: 100%;
+        }
+
+        .footer {
+            position: absolute;
+            width: 100%;
+           }
+           .footer-col {
+            width: 50%;
+            margin-bottom: 30px;
+           }
+
+        .row .container:focus,
+.row .container:hover {
+    transform: none;
+    z-index: 1;
+}
+
+@keyframes navLinkFade {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+}
+
+
+    @media (max-width: 780px)  {
+
+   
+        .navbar {
+            position: fixed;
+            right: 0px;
+            height: 92vh;
+            top: 8vh;
+            display: flex;
+            flex-direction: column;
+            display: inline-block;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 90px;
+            transform: translateX(100%);
+            transition: transform 0.5s ease-in;
+            z-index: 1000;
+            
+             }
+        
+    
+         .navbar li {
+             opacity: 0;
+         }
+         
+    
+         header {
+    
+             height: 60px;
+             width: 100%;
+             top: 0;
+             right: 0;
+             z-index: 1000;
+             display: flex;
+             align-items: center;
+             justify-content: space-between;
+             background: black;
+             color: white;
+             padding: 15px 60px; 
+            }
+    
+            .logo {
+                font-size: 30px;
+            }
+
+
+            .nav-active {
+                transform: translateX(0%);
+            }
+
+        }
+
+        @media (max-width: 470px) {
+            .logo {
+                font-size: 22px;
+             }
+         
+        }
+
+        @media (max-width: 400px) {
+
+            .logo {
+              font-size: 15px;
+            }
+          }
+        
+        @media (max-width: 380px)  {
+          
+            .logo {
+                font-size: 15px;
+             }
+        
+    
+        }
+        
+        
+        
+        @media (max-width: 350px)  {
+            .logo {
+              font-size: 12px;
+           }
+          }
