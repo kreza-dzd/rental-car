@@ -22,6 +22,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Yeseva+One&display=swap" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://www.youtube.com/iframe_api"></script>
+
   
 </head>
 <body>
@@ -40,6 +42,7 @@
                 <li><a href="gallery.html">Galerie</a></li>
                 <li><a href="map.html">Routen</a></li>
                 <li class="kondi"><a href="konditionen.html">Konditionen</a></li>
+                <li class="buchen"><a href="formular.html">Buchen</a></li>
         </ul>
         <button id="myButton" onclick="location.href='formular.html'" class="btn btn-hover">Buchen</button>
     </header>
@@ -55,7 +58,7 @@
                   <img src="images/car2.jpg" alt="" class="carousel_img">
                </div>
                <div class="carousel_item">
-                  <img src="images/car3.jpg" alt="" class="carousel_img">
+                  <img src="images/sestica.jpg" alt="" class="carousel_img">
                </div>
             </div>
          </div>
@@ -65,8 +68,8 @@
             <h1><span>Erfülle Dir</span> einen <br> kleinen Traum</h1>
             <p>und geniße eine wunderschöne Zeit in einen VW Käfer Cabrio. Erleben Sie die Schönheit des Bodensees. Sie können auch einen Käfer für Hochzeit, Touren, Events oder einen besonderen Ausflug mieten. </p>
                 <div class="app-stores">
-                   <img src="images/apple.png" width="94px" height="44px" alt="">
-                   <img src="images/google.png" width="94px" height="44px" alt="">
+                    <img src="images/apple.png" width="94" height="44" alt="">
+                    <img src="images/google.png" width="94" height="44" alt="">
                 </div>
         </div>
 
@@ -74,15 +77,16 @@
 
     <div class="main-map">
         <div class="overlay" onClick="style.pointerEvents='none'"></div>
-        <a class="move" href="#">
-            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1md3oQkbAN9DXcbt_ammg0gp745Vzhho&ehbc=2E312F" width="2640" height="480"></iframe>
-        </a>
+        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1md3oQkbAN9DXcbt_ammg0gp745Vzhho&ehbc=2E312F" width="2640" height="480"></iframe>
     </div>
 
     <section class="about" id="about">
         <div class="about-container">
             <div class="about-img">
-                <img src="images/auto9.jpg" alt="">
+
+                <iframe id="video-player" width="560" height="315" src="https://www.youtube.com/embed/90HZmovr1uA" frameborder="0" allowfullscreen></iframe>
+
+
             </div>
             <div class="about-text">
                 <span>Über Uns</span>
@@ -92,6 +96,7 @@
             </div>
         </div>
     </section>
+
 
     <footer class="footer">
         <div class="container">
