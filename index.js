@@ -83,3 +83,97 @@ const navSlide = () => {
     location.href = "uber.html";
  
  };
+
+
+ var player;
+
+function onYouTubeIframeAPIReady() {
+  player = new YT.Player('video-player', {
+    events: {
+      'onStateChange': onPlayerStateChange
+    }
+  });
+}
+
+function onPlayerStateChange(event) {
+  if (event.data == YT.PlayerState.PLAYING && !event.target.isFullscreen()) {
+    event.target.playVideo();
+    event.target.setPlaybackQuality('hd1080');
+  }
+  if (event.data == YT.PlayerState.ENDED) {
+    event.target.playVideo();
+  }
+}
+
+function playVideo() {
+  player.playVideo();
+}
+
+function pauseVideo() {
+  player.pauseVideo();
+}
+
+function stopVideo() {
+  player.stopVideo();
+}
+
+function muteVideo() {
+  player.mute();
+}
+
+function unMuteVideo() {
+  player.unMute();
+}
+
+function toggleMuteVideo() {
+  if (player.isMuted()) {
+    player.unMute();
+  } else {
+    player.mute();
+  }
+}
+
+function setVolume(volume) {
+  player.setVolume(volume);
+}
+
+function getVolume() {
+  return player.getVolume();
+}
+
+function seekTo(seconds) {
+  player.seekTo(seconds);
+}
+
+function getDuration() {
+  return player.getDuration();
+}
+
+function getCurrentTime() {
+  return player.getCurrentTime();
+}
+
+function enterFullScreen() {
+  var iframe = document.getElementById('video-player');
+  if (iframe.requestFullscreen) {
+    iframe.requestFullscreen();
+  } else if (iframe.webkitRequestFullscreen) {
+    iframe.webkitRequestFullscreen();
+  } else if (iframe.mozRequestFullScreen) {
+    iframe.mozRequestFullScreen();
+  } else if (iframe.msRequestFullscreen) {
+    iframe.msRequestFullscreen();
+  }
+}
+
+function exitFullScreen() {
+  if (document.exitFullscreen) {
+    document.exitFullscreen();
+  } else if (document.webkitExitFullscreen) {
+    document.webkitExitFullscreen();
+  } else if (document.mozCancelFullScreen) {
+    document.mozCancelFullScreen();
+  } else if (document.msExitFullscreen) {
+    document.msExitFullscreen();
+  }
+}
