@@ -334,6 +334,11 @@ table {
     width: 100%; /* space between the text and the line */
   }
 
+  .nowrap {
+    white-space: nowrap;
+  }
+  
+
   .tank-container {
     position: relative;
     display: flex;
@@ -721,12 +726,7 @@ h2 {
         margin-left: -5rem;
     }
 
-    .move-right {
-        padding-left: 3em;
-    }
 
-
-  
 }
 
 
