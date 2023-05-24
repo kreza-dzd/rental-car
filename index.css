@@ -539,13 +539,16 @@ ul {
 
     .logo { 
         font-family: 'Yeseva One', cursive;
-       font-size: 48px;
+       font-size: 30px;
        margin-top: 0.5rem;
         color: white;   
     }
     
     .navbar a {
-        font-size: 1rem;  
+        font-size: 0.8rem;
+        padding: 20px 30px;
+        color: white;
+        font-weight: 500; 
     }
  
     .text p {
@@ -578,10 +581,9 @@ ul {
 
 @media (max-width: 1640px) {
 
- 
-    
     .navbar a {
-        padding-left: 40px;  
+        padding-left: 20px; 
+        padding: 10px 20px;
     }
 
 
@@ -638,18 +640,16 @@ ul {
 }
 
 
-@media (max-width: 1110px) {
- 
+@media (max-width: 1300px) {
     .navbar a {
-        padding-left: 0px; 
-        padding: 6px 20px;
-        width: 100px;
+        font-size: 0.7rem;
+        padding: 10px 15px;
     }
 
- 
-
 }
-     
+
+
+   
      @media (max-width: 900px) {
 
        
@@ -819,7 +819,7 @@ ul {
         display: inline-block;
         text-align: center;
         vertical-align: middle;
-        line-height: 90px;
+        line-height: 30px;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
         z-index: 1000;
