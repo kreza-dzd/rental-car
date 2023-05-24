@@ -285,6 +285,13 @@ table {
     padding-bottom: 1em;
 }
 
+.fixed {
+    display: inline-block;
+    width: 350px; /* adjust this value as needed */
+    text-align: left;
+}
+
+
 .title {
     padding-right: 5em;
 }
@@ -905,9 +912,19 @@ h2 {
     td {
         padding-left: 3em;
     }
+    .fixed {
+        display: inline-block;
+        width: 200px; /* adjust this value as needed */
+        text-align: left;
+        font-size: 12px;
+    }
+
+ td span {
+        font-size: 14px;
+    }
 
     .signatures span {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .answers-table {
@@ -1168,6 +1185,15 @@ h2 {
                 font-size: 35px;
             }
 
+            .fixed {
+                width: 180px;
+                font-size: 12px;
+            }
+        
+         td span {
+                font-size: 10px;
+            }
+
             .answers-table {
                 width: 100%;
             }
@@ -1196,6 +1222,15 @@ h2 {
     
     height: 50px; 
   
+}
+
+.fixed {
+    width: 150px;
+    font-size: 7px;
+}
+
+td span {
+    font-size: 7px;
 }
 
     .footer {
@@ -1298,10 +1333,13 @@ h2 {
 @media (max-width: 470px) {
 
 
-     main h1 {
-         font-size: 20px;
-         margin-top: -3rem;
-     }
+     .fixed {
+        width: 120px;
+    }
+    
+    td span {
+        font-size: 7px;
+    }
 
 }
 
@@ -1336,6 +1374,10 @@ h2 {
       padding-bottom: 0.5em;
      
     }
+
+    .fixed {
+        width: 100px;
+    }
   }
 
 
@@ -1344,6 +1386,17 @@ h2 {
     .logo {
         font-size: 12px;
      }
+
+     .fixed {
+        width: 80px;
+        font-size: 5px;
+    }
+
+    td span {
+        font-size: 5px;
+    }
+
+
 
     .footer {
         bottom: -1500;
