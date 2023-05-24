@@ -268,6 +268,19 @@ table {
     font-size: 24px;
 }
 
+.single-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    overflow: auto;
+}
+
+.single-line p {
+    white-space: nowrap;
+}
+
+
 .kosten {
     padding-bottom: 1em;
 }
@@ -301,6 +314,9 @@ table {
     width: 100%;
   }
   
+  .liner {
+    white-space: nowrap;
+}
 
 
 
@@ -558,6 +574,7 @@ h2 {
 
 .para-last p {
     text-align: left;
+    white-space: nowrap;
 }
 
 .space {
@@ -569,7 +586,6 @@ h2 {
     padding-bottom: 5em;
     text-align: left;
 }
-
 
 .container {
     max-width: 1170px;
@@ -705,6 +721,10 @@ h2 {
         margin-left: -5rem;
     }
 
+    .move-right {
+        padding-left: 3em;
+    }
+
 
   
 }
@@ -720,13 +740,11 @@ h2 {
         
     }
 
-    main {
-        max-width: 1500px;
-    }
-
     main p {
         font-size: 37px;
     }
+
+    
 
     .footer {
         background-color: #24262b;
@@ -742,7 +760,6 @@ h2 {
 @media(max-width: 1570px)  {
     main {
         width: 100%;
-        max-width: 1400px;
         padding-top: 1em;
         margin-left: 4.5rem;
         font-size: 35px;
@@ -750,6 +767,10 @@ h2 {
 
     main p {
         font-size: 25px;
+    }
+
+    .answers-table {
+        width: 40%;
     }
 
 
@@ -783,7 +804,7 @@ h2 {
     
     main {
         width: 100%;
-        max-width: 1300px;
+        
         padding-top: 1.5em;
         margin-left: 3rem;
         font-size: 35px;
@@ -799,7 +820,6 @@ h2 {
 
     main {
         width: 100%;
-        max-width: 1200px;
         padding-top: 1em;
         margin-left: 2rem;
         font-size: 35px;
@@ -813,7 +833,6 @@ h2 {
 
     main {
         width: 100%;
-        max-width: 1100px;
         padding-top: 1em;
         margin-left: 2rem;
         font-size: 25px;
@@ -844,7 +863,6 @@ h2 {
 
     main {
         width: 100%;
-        max-width: 950px;
         padding-top: 1em;
         margin-left: 1rem;
         font-size: 35px;
@@ -865,6 +883,10 @@ h2 {
         width: 100px;
     }
 
+    .answers-table {
+        width: 60%;
+    }
+
     .footer {
         bottom: -1300;
     }
@@ -874,14 +896,22 @@ h2 {
 @media (max-width: 950px)  {
     main {
         width: 100%;
-        max-width: 860px;
+        
         padding-top: 1em;
         margin-left: 1rem;
         font-size: 35px;
     }
 
+    td {
+        padding-left: 3em;
+    }
+
     .signatures span {
         font-size: 12px;
+    }
+
+    .answers-table {
+        width: 80%;
     }
 
     .footer {
@@ -976,7 +1006,7 @@ h2 {
  
             main {
                 width: 100%;
-                max-width: 820px;
+                
                 padding-top: 4em;
                 margin-left: 1rem;
                 font-size: 35px;
@@ -1134,9 +1164,12 @@ h2 {
        
             main {
                 width: 100%;
-                max-width: 680px;
                 margin-left: 1rem;
                 font-size: 35px;
+            }
+
+            .answers-table {
+                width: 100%;
             }
 
             .footer {
@@ -1153,7 +1186,6 @@ h2 {
 @media (max-width: 670px) {
     main {
         width: 100%;
-        max-width: 610px;
         margin-left: 1rem;
         font-size: 35px;
     }
@@ -1176,7 +1208,6 @@ h2 {
 @media (max-width: 610px) {
     main {
         width: 100%;
-        max-width: 570px;
         margin-left: 1rem;
         font-size: 35px;
     }
@@ -1337,4 +1368,3 @@ h2 {
       font-size: 12px;
    }
   }
-
