@@ -1342,7 +1342,9 @@ td span {
         font-size: 8px;
     }
 
-
+    .para-last p {
+        white-space: normal;
+    }
     
     td span {
         font-size: 10px;
