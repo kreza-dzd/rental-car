@@ -363,10 +363,7 @@ header {
 }
 
 
-.about-img iframe {
-    width: 1000px;
-    height: 700px;
-}
+
 
 .video-container {
     display: flex;
@@ -926,16 +923,17 @@ ul {
    }
 
    .about-img {
-    padding-top: 2em;
+    padding-top: 0em;
     margin-top: 3rem;
 }
 
 .about-img img {
-    height: 70%;
+    height: 300px;
 }
 
 #video-player {
     width: 90%;
+    height: 300px;
 }
 
 
