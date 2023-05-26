@@ -930,6 +930,14 @@ ul {
     margin-top: 3rem;
 }
 
+.about-img img {
+    height: 70%;
+}
+
+#video-player {
+    width: 90%;
+}
+
 
   }
 
