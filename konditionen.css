@@ -1024,7 +1024,7 @@ h2 {
             main {
                 width: 100%;
                 
-                padding-top: 4em;
+                padding-top: 2em;
                 margin-left: 1rem;
                 font-size: 35px;
             }
@@ -1183,6 +1183,7 @@ h2 {
                 width: 100%;
                 margin-left: 1rem;
                 font-size: 35px;
+                padding-top: 1em;
             }
 
             .fixed {
@@ -1289,12 +1290,15 @@ td span {
         max-width: 510px;
         margin-left: 1rem;
         font-size: 35px;
+        padding-top: 0.5em;
     }
 
 
     td {
-        font-size: 10px;
+        font-size: 12px;
+        padding-left: 0em;
     }
+
    
     .footer {
         bottom: -3200;
@@ -1335,10 +1339,13 @@ td span {
 
      .fixed {
         width: 120px;
+        font-size: 8px;
     }
+
+
     
     td span {
-        font-size: 7px;
+        font-size: 10px;
     }
 
 }
@@ -1354,10 +1361,17 @@ td span {
        }
 
     main {
-        padding-top: 2.8em;
         max-width: 430px;
         margin-left: -1rem;
         font-size: 35px;
+    }
+
+    main h1 {
+        font-size: 20px;
+    }
+
+    main h2 {
+        font-size: 15px;
     }
 
     .footer {
@@ -1366,7 +1380,7 @@ td span {
 
 }
 
-@media (max-width: 413px) {
+@media (max-width: 415px) {
 
    
     .logo {
@@ -1376,9 +1390,19 @@ td span {
     }
 
     .fixed {
-        width: 100px;
+        width: 130px;
+        font-size: 9px;
     }
+
+
+    
+    td span {
+        font-size: 9px;
+    }
+
+
   }
+
 
 
 @media (max-width: 380px)  {
@@ -1386,16 +1410,6 @@ td span {
     .logo {
         font-size: 12px;
      }
-
-     .fixed {
-        width: 80px;
-        font-size: 5px;
-    }
-
-    td span {
-        font-size: 5px;
-    }
-
 
 
     .footer {
@@ -1407,8 +1421,19 @@ td span {
 @media (max-width: 360px)  {
 
     .logo {
-        font-size: 12px;
+        font-size: 10px;
       }
+
+      .fixed {
+        width: 100px;
+        font-size: 6px;
+    }
+
+
+    
+    td span {
+        font-size: 6px;
+    }
   
 
     .footer {
