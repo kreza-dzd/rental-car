@@ -1,5 +1,6 @@
 
 
+
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Maven+Pro:wght@400;500;700&family=UnifrakturMaguntia&display=swap');
 
 * {
@@ -363,14 +364,28 @@ header {
 }
 
 
-
+.about-img iframe {
+    width: 1000px;
+    height: 700px;
+}
 
 .video-container {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 3em;
+    position: relative; /* position relative to contain the absolutely positioned iframe */
+    overflow: hidden; /* hide anything that overflows the container */
+    padding-bottom: 56.25%; 
   }
+
+  #video-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
 
 .about-text span {
@@ -921,8 +936,8 @@ ul {
     .logo {
       font-size: 22px;
    }
-
-   .about-img {
+   
+      .about-img {
     padding-top: 0em;
     margin-top: 3rem;
 }
@@ -935,6 +950,7 @@ ul {
     width: 90%;
     height: 300px;
 }
+
 
 
   }
@@ -968,4 +984,3 @@ ul {
           font-size: 12px;
        }
       }
-
