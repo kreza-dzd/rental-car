@@ -1,24 +1,28 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="de">
 <head>
+    <!-- Google tag (gtag.js) -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=G-0940HFP49D"></script>
+   <script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-0940HFP49D');
+    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Car Rental Website</title>
+    <title>Map</title>
     <link rel="stylesheet" href="map.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-  <script src="https://kit.fontawesome.com/2df8c7ed38.js" crossorigin="anonymous"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  
-  
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2df8c7ed38.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    
+    
     <header>
         <div class="logo">
             <a href="index.html">
@@ -27,10 +31,12 @@
         </div>
         <div class="bx bx-menu" id="menu-icon"></div>
         <ul class="navbar">
+                <li><a href="index.html">Strartseite</a></li>
                 <li><a href="uber.html">About</a></li>
                 <li><a href="gallery.html">Galerie</a></li>
                 <li><a href="map.html">Routes</a></li>
                 <li class="kondi"><a href="konditionen.html">Konditionen</a></li>
+                <li class="buchen"><a href="formular.html">Buchen</a></li>
         </ul>
         <button id="myButton" onclick="location.href='formular.html'" class="btn btn-hover">Buchen</button>
     </header>
@@ -41,9 +47,7 @@
   
            <div class="main-map">
                <div class="overlay" onClick="style.pointerEvents='none'"></div>
-               <a class="move" href="#">
                    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1jGvI7-a3UGbAmd6yrS5cdFjstdkmLPlj&ehbc=2E312F" width="1050px" height="580px"></iframe>
-               </a>
            </div>       
 
            <div class="col">
@@ -64,14 +68,12 @@
 
       <div class="main-map">
         <div class="overlay" onClick="style.pointerEvents='none'"></div>
-        <a class="move" href="#">
             <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1lchNRTICOEVRsGz6Hs6Xb36EVGZ6XyI&ehbc=2E312F" width="640" height="480"></iframe>
-        </a>
     </div>      
       <div class="col">
             <div class="small-img-row">
               <div class="small-img">
-                  <img src="images/meersburg.jpg" width="140px" height="100px" alt="">
+                  <img src="images/meersburg.jpeg" width="140px" height="100px" alt="">
               </div>
               <div class="lol2">
                   <h2 class="project-title">Friedrichshafen - Meersburg 
@@ -85,9 +87,7 @@
 
 <div class="main-map">
     <div class="overlay" onClick="style.pointerEvents='none'"></div>
-    <a class="move" href="#">
         <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1iuQPfxJINMXA_MXS3U-yfZ0DbKhv7mw&ehbc=2E312F" width="640" height="480"></iframe>
-    </a>
 </div>        
 <div class="col">
     
@@ -115,10 +115,9 @@
             <div class="footer-col">
                 <h4>Unternehmen</h4>
                 <ul>
-                    <li><a href="table.html">über uns</a></li>
-                    <li><a href="#">Unsere Leistungen</a></li>
-                    <li><a href="#">privacy policy</a></li>
-                </ul>
+                    <li><a href="cookie.html">Cookies</a></li>
+                    <li><a href="impressum.html">Impressum</a></li>
+                    <li><a href="datenschutz.html">Datenschutz</a></li>
             </div>
             <div class="footer-col">
                 <h4>Hilfe bekommen</h4>
@@ -149,7 +148,61 @@
 </footer>
 
     
-    <script src="map.js"></script>
+    <script>
+
+const navSlide = () => {
+   const menuIcon = document.querySelector('#menu-icon');
+   const nav = document.querySelector('.navbar');
+   const navbar = document.querySelectorAll('.navbar li');
+
+   menuIcon.addEventListener('click', () => {
+      nav.classList.toggle('nav-active');
+
+      navbar.forEach((link, index) => {
+
+         if (link.style.animation) {
+            link.style.animation = '';
+         } else {
+            link.style.animation = `navLinkFade 0.5 ease forwards ${index / 7 + 0.3}s`;
+         }
+      });
+   });
+
+   
+}
+
+navSlide();
+
+
+
+
+
+window.addEventListener("load", () => {
+    autoSlide();
+ })
+ 
+ function autoSlide() {
+    setInterval(() => {
+       slide(getItemActiveIndex() + 1);
+    }, 3000); // slide speed = 3s
+ }
+ 
+ function slide(toIndex) {
+    const itemsArray = Array.from(document.querySelectorAll(".carousel_item"));
+    const itemActive = document.querySelector(".carousel_item__active");
+ 
+    // check if toIndex exceeds the number of carousel items
+    if (toIndex >= itemsArray.length) {
+       toIndex = 0;
+    }
+ 
+    const newItemActive = itemsArray[toIndex];
+ 
+ }
+
+
+
+    </script>
 
 </body>
 </html>
