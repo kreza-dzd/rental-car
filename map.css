@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Maven+Pro:wght@400;500;700&family=UnifrakturMaguntia&display=swap');
 
+
+
 * {
     margin: 0;
     padding: 0;
@@ -21,6 +23,17 @@
 
 body {
     background-color:#f3f3f3 ;
+}
+
+
+
+.warning {
+  background-color: #ffcc00;
+  color: #333;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 html::-webkit-scrollbar {
@@ -94,6 +107,11 @@ header {
    .navbar a:hover::after {
        width: 100%;
    }
+
+   .buchen {
+    visibility: hidden;
+   }
+
    
    #menu-icon {
        font-size: 24px;
@@ -461,8 +479,11 @@ b {
         color: white;   
     }
     
-    .navbar a {
-        font-size: 1rem;  
+      .navbar a {
+        font-size: 0.8rem;
+        padding: 20px 30px;
+        color: white;
+        font-weight: 500; 
     }
  
  
@@ -507,7 +528,8 @@ b {
 
  
     .navbar a {
-        padding-left: 40px;  
+        padding-left: 20px; 
+        padding: 10px 20px;
     }
 
     
@@ -579,16 +601,18 @@ b {
 
 }
 
+@media (max-width: 1300px) {
+    .navbar a {
+        font-size: 0.7rem;
+        padding: 10px 15px;
+    }
+
+}
+
 
 
 @media (max-width: 1110px) {
 
-
-    .navbar a {
-        padding-left: 0px; 
-        padding: 6px 20px;
-        width: 100px;
-    }
 
     .small-img-row {
         margin-left: 3rem;
@@ -656,6 +680,11 @@ b {
                  opacity: 0;
                  padding-bottom: 26px;
              }
+
+             .buchen {
+                visibility: visible;
+               }
+
              
              #menu-icon {
                 display: block;
@@ -779,6 +808,13 @@ b {
         
         
     }
+    
+    
+          .warning {
+   margin-top: 4rem;
+  }
+
+    
 
     section {
         padding: 20px 14px;
@@ -798,7 +834,7 @@ b {
         display: inline-block;
         text-align: center;
         vertical-align: middle;
-        line-height: 90px;
+        line-height: 30px;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
         z-index: 1000;
@@ -929,14 +965,25 @@ b {
 
   }
 
+  @media (max-width: 413px) {
 
-
-  @media (max-width: 400px) {
-
+   
     .logo {
-      font-size: 15px;
+      font-size: 17px;
+      padding-bottom: 0.5em;
+     
     }
   }
+
+  @media (max-width: 395px) {
+
+    .logo {
+      font-size: 17px;
+      padding-bottom: 0em;
+    }
+  }
+
+
 
   @media (max-width: 390px)  {
  
