@@ -723,6 +723,13 @@ h2 {
         font-size: 30px;
  
     }
+    
+      .navbar a {
+        font-size: 0.8rem;
+        padding: 20px 30px;
+        color: white;
+        font-weight: 500; 
+    }
 
 
     .logo { 
@@ -742,9 +749,8 @@ h2 {
 @media(max-width: 1640px) {
 
     .navbar a {
-        font-size: 1.5rem;
-        padding-left: 40px;
-        
+        padding-left: 20px; 
+        padding: 10px 20px;
     }
 
     main p {
@@ -866,6 +872,14 @@ h2 {
     }
 }
 
+@media (max-width: 1300px) {
+    .navbar a {
+        font-size: 0.7rem;
+        padding: 10px 15px;
+    }
+
+}
+
 @media (max-width: 1120px) {
 
     main {
@@ -883,12 +897,6 @@ h2 {
     }
 
 
-    .navbar a {
-        font-size: 17px;
-        padding-left: 0px; 
-        padding: 6px 20px;
-        width: 100px;
-    }
 
     .answers-table {
         width: 60%;
@@ -1126,10 +1134,6 @@ h2 {
 @media (max-width: 780px) {
     
     
-          .warning {
-   margin-top: 4rem;
-  }
-
     
     .navbar {
         position: fixed;
@@ -1141,7 +1145,7 @@ h2 {
         display: inline-block;
         text-align: center;
         vertical-align: middle;
-        line-height: 90px;
+        line-height: 30px;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
         z-index: 1000;
@@ -1183,7 +1187,7 @@ h2 {
                 width: 100%;
                 margin-left: 1rem;
                 font-size: 35px;
-                padding-top: 1em;
+                padding-top: 2em;
             }
 
             .fixed {
@@ -1290,7 +1294,6 @@ td span {
         max-width: 510px;
         margin-left: 1rem;
         font-size: 35px;
-        padding-top: 0.5em;
     }
 
 
@@ -1342,15 +1345,14 @@ td span {
         font-size: 8px;
     }
 
-    .para-last p {
+ .para-last p {
         white-space: normal;
     }
+
     
     td span {
         font-size: 10px;
     }
-
-    
 
 }
 
