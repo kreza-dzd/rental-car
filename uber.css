@@ -701,7 +701,7 @@ list-style: none;
   }
   
     .navbar a {
-        font-size: 1rem;
+        font-size: 1.3rem;
         padding: 20px 30px;
         color: white;
         font-weight: 500; 
@@ -743,7 +743,7 @@ list-style: none;
 
 @media (max-width: 1300px) {
     .navbar a {
-        font-size: 0.7rem;
+        font-size: 1.1rem;
         padding: 10px 15px;
     }
 
