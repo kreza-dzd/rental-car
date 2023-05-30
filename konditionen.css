@@ -800,7 +800,7 @@ h2 {
 
 
     .navbar a {
-        font-size: 1.3rem;
+        font-size: 1rem;
         padding: 10px 20px;
         color: white;
         font-weight: 500;
@@ -817,7 +817,7 @@ h2 {
     
     main {
         width: 100%;
-        
+        max-width: 1300px;
         padding-top: 1.5em;
         margin-left: 3rem;
         font-size: 35px;
