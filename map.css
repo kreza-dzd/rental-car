@@ -358,11 +358,15 @@ iframe {
     padding: 2rem;
     max-width: 90%;
     margin: 2rem auto;
-    background: linear-gradient(to right, #87cefa, #add8e6); 
-    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.25);
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
     transition: all 0.3s ease-in-out;
 }
+
 
 .col:hover {
     transform: translateY(-10px);
@@ -404,9 +408,12 @@ iframe {
 .content-text p {
     font-family: 'Josefin Sans', sans-serif; 
     font-size: 1.125rem;
-    color: #4d4d4d;
+    color: #000000;
     line-height: 1.6;
+    margin: 1em 0;
+    text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.3);
 }
+
 
 
 .container {
