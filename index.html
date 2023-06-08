@@ -98,7 +98,11 @@
             </div>
           </div>
           <div class="video-container">
-            <iframe id="video-player" width="1560" height="615" src="https://www.youtube.com/embed/u4g-Aa2GfSY" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video-player" type="text/html" width="1560" height="615"
+  src="https://www.youtube.com/embed/u4g-Aa2GfSY?enablejsapi=1&origin=http://bodenseeoldtimer.de"
+  frameborder="0">
+</iframe>
+
           </div>
     </section>
 
@@ -149,6 +153,14 @@
 
     
     <script>
+    
+    window.addEventListener('CookiebotOnAccept', function(){
+    if(Cookiebot.consent.preferences){ // check if user consented to preference cookies category
+        // Code to load the YouTube video
+        var ytplayer = document.getElementById('ytplayer');
+        ytplayer.src = "https://www.youtube.com/embed/u4g-Aa2GfSY?enablejsapi=1&origin=http://bodenseeoldtimer.de";
+    }
+});
 
 const navSlide = () => {
     const menuIcon = document.querySelector('#menu-icon');
