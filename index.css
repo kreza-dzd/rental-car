@@ -623,11 +623,7 @@ ul {
         width: 100%;
      }
 
- 
-    
-
 }
-
 
 @media (max-width: 1460px) {
 
@@ -639,6 +635,8 @@ ul {
 
 
 }
+
+
 @media (max-width: 1300px) {
     .navbar a {
         font-size: 0.7rem;
