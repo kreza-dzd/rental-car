@@ -80,7 +80,7 @@ header {
  }
  
  .navbar a {
-     font-size: 1.6rem;
+     font-size: 1.2rem;
      padding: 20px 40px;
      color: white;
      font-weight: 700;
@@ -184,12 +184,13 @@ transition: var(--transition-2);
 
 .btn2-hover:is(:hover, :focus)::after { --scale: 500; }
  
-
-
+h1 {
+  padding-top: 2em;
+}
 
   form {
     margin: 10px auto;
-    margin-top: 10rem;
+    margin-top: 7rem;
     padding: 10px 20px;
     background: #f4f7f8;
     border-radius: 8px;
@@ -609,6 +610,11 @@ to{
           .logo {
             font-size: 30px;
         }
+
+        h1 {
+          padding-top: 0.5em;
+        }
+        
       
       
         .footer {
