@@ -59,6 +59,7 @@ header {
        font-family: 'Yeseva One', cursive;
       font-size: 64px;
        color: white;   
+       margin-left: -4rem;
    }
    
    
@@ -347,7 +348,7 @@ header {
 
 
 .about-img img {
-    width: 80%;
+    width: 70%;
     border-radius: 70px;
 
 }
@@ -534,7 +535,9 @@ ul {
        font-size: 30px;
        margin-top: 0.5rem;
         color: white;   
+        margin-left: -2rem;
     }
+
     
     .navbar a {
         font-size: 0.8rem;
@@ -562,6 +565,11 @@ ul {
      margin: 0.5rem 0 1.4rem;
      font-size: 1.2rem;
  }
+
+ 
+.about-img img {
+    width: 80%;
+}
 
  .about-img iframe {
     width: 800px;
@@ -627,6 +635,11 @@ ul {
 
 @media (max-width: 1460px) {
 
+
+    .logo { 
+ 
+        margin-left: 1rem;
+    }
 
     .about-img img {
         width: 90%;
@@ -702,7 +715,7 @@ ul {
 
             .logo {
                 display: block;
-             margin-left: auto;
+             margin-left: 4rem;
              margin-right: auto;
                font-size: 40px;
             }
@@ -926,9 +939,12 @@ ul {
 
 
 @media (max-width: 480px)  {
-    .logo {
-      font-size: 22px;
-   }
+
+   .logo {
+ margin-left: auto;
+ margin-right: auto;
+ font-size: 22px;
+}
    
       .about-img {
     padding-top: 0em;
