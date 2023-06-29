@@ -724,7 +724,7 @@ b {
             }
             .logo {
                 display: block;
-             margin-left: auto;
+             margin-left: 4rem;
              margin-right: auto;
                font-size: 40px;
             }
@@ -971,8 +971,10 @@ b {
 
 @media (max-width: 480px)  {
     .logo {
-      font-size: 22px;
-   }
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 22px;
+       }
 
 
 .project-title {
