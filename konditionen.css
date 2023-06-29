@@ -998,7 +998,7 @@ h2 {
 
         .logo {
             display: block;
-         margin-left: auto;
+         margin-left: 4rem;
          margin-right: auto;
            font-size: 40px;
         }
@@ -1341,7 +1341,9 @@ td span {
 }
 
 @media (max-width: 470px) {
-
+    #menu-icon {
+        top: 33%;
+    }
 
      .fixed {
         width: 120px;
@@ -1373,10 +1375,12 @@ td span {
         max-width: 430px;
         margin-left: -1rem;
         font-size: 35px;
+    
     }
 
     main h1 {
         font-size: 20px;
+        padding-top: 2em;
     }
 
     main h2 {
