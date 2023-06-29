@@ -816,12 +816,12 @@ list-style: none;
                    }
 
 
-          .logo {
-              display: block;
-           margin-left: auto;
-           margin-right: auto;
-             font-size: 40px;
-          }
+                   .logo {
+                    display: block;
+                 margin-left: 10rem;
+                 margin-right: auto;
+                   font-size: 40px;
+                }
 
           .btn {
             visibility: hidden;
@@ -887,6 +887,7 @@ list-style: none;
           
           .logo {
             font-size: 30px;
+            margin-left: 7rem;
         }
         
         .btn2 {
@@ -919,8 +920,10 @@ list-style: none;
 
   @media (max-width: 480px)  {
     .logo {
+      margin-left: auto;
+      margin-right: auto;
       font-size: 22px;
-   }
+     }
   }
 
   @media (max-width: 400px) {
