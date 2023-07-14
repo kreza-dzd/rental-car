@@ -1,22 +1,29 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-0940HFP49D"        ></script>
+       <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
-    <link rel="stylesheet" href="gallery.css">
-    <script src="https://kit.fontawesome.com/2df8c7ed38.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
-</head>
+        gtag('config', 'G-0940HFP49D');
+        </script>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Galerie</title>
+        <link rel="stylesheet" href="gallery.css">
+        <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+         <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
+          <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Yeseva+One&display=swap" rel="stylesheet">
+         <script src="https://kit.fontawesome.com/2df8c7ed38.js" crossorigin="anonymous"></script>
+    </head>
 <body>
+    
 
     <header>
         <div class="logo">
@@ -26,10 +33,12 @@
         </div>
         <div class="bx bx-menu" id="menu-icon"></div>
         <ul class="navbar">
+                <li><a href="index.html">Strartseite</a></li>
                 <li><a href="uber.html">About</a></li>
                 <li><a href="gallery.html">Galerie</a></li>
                 <li><a href="map.html">Routes</a></li>
                 <li class="kondi"><a href="konditionen.html">Konditionen</a></li>
+                <li class="buchen"><a href="formular.html">Buchen</a></li>
         </ul>
         <button id="myButton" onclick="location.href='formular.html'" class="btn btn-hover">Buchen</button>
     </header>
@@ -42,22 +51,21 @@
         </div>
 
         <div class="gallery">
-          
-                <img src="images/buba16.jpg" onclick="openFullImg(this.src)">
-                <img src="images/buba2.jpg" onclick="openFullImg(this.src)">
-                <img src="images/buba3.jpg" onclick="openFullImg(this.src)">
-                <img src="images/buba4.jpg" onclick="openFullImg(this.src)">
-                <img src="images/buba5.jpg" onclick="openFullImg(this.src)">
-                <img src="images/buba6.jpg" onclick="openFullImg(this.src)">
-                <img src="images/buba7.jpg" onclick="openFullImg(this.src)">
-                <img src="images/buba8.jpg" onclick="openFullImg(this.src)">
-                <img src="images/buba9.jpg" onclick="openFullImg(this.src)">
-                <img src="images/buba10.jpg" onclick="openFullImg(this.src)">
-                <img src="images/buba11.jpg" onclick="openFullImg(this.src)">
-                <img src="images/buba12.jpg" onclick="openFullImg(this.src)">
-                <img src="images/buba13.jpg" onclick="openFullImg(this.src)">
-                <img src="images/buba14.jpg" onclick="openFullImg(this.src)">
-                <img src="images/buba15.jpg" onclick="openFullImg(this.src)">
+                <img src="images/buba12.jpg" alt="Friedrichafen Oldtimer" onclick="openFullImg(this.src)">
+                <img src="images/buba2.jpg" alt="Friedrichafen Oldtimer" onclick="openFullImg(this.src)">
+                <img src="images/buba3.jpg" alt="Friedrichafen Oldtimer" onclick="openFullImg(this.src)">
+                <img src="images/buba4.jpg" alt="Friedrichafen Oldtimer" onclick="openFullImg(this.src)">
+                <img src="images/buba5.jpg" alt="Friedrichafen Oldtimer" onclick="openFullImg(this.src)">
+                <img src="images/buba6.jpg" alt="Friedrichafen Oldtimer" onclick="openFullImg(this.src)">
+                <img src="images/buba7.jpg" alt="Friedrichafen Oldtimer" onclick="openFullImg(this.src)">
+                <img src="images/buba8.jpg" alt="Friedrichafen Oldtimer" onclick="openFullImg(this.src)">
+                <img src="images/devetka.jpg" alt="Friedrichafen Oldtimer" onclick="openFullImg(this.src)">
+                <img src="images/desetka.jpg" alt="Friedrichafen Oldtimer" onclick="openFullImg(this.src)">
+                <img src="images/buba11.jpg" alt="Friedrichafen Oldtimer" onclick="openFullImg(this.src)">
+                <img src="images/buba12.jpg" alt="Friedrichafen Oldtimer" onclick="openFullImg(this.src)">
+                <img src="images/sestica.jpg" alt="Friedrichafen Oldtimer" onclick="openFullImg(this.src)">
+                <img src="images/buba14.jpg" alt="Friedrichafen Oldtimer" onclick="openFullImg(this.src)">
+                <img src="images/buba15.jpg" alt="Friedrichafen Oldtimer" onclick="openFullImg(this.src)">
    
             
         </div>
@@ -69,9 +77,9 @@
                 <div class="footer-col">
                     <h4>Unternehmen</h4>
                     <ul>
-                        <li><a href="#">über uns</a></li>
-                        <li><a href="#">Unsere Leistungen</a></li>
-                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="cookies.html">Cookies</a></li>
+                        <li><a href="impressum.html">Imressum</a></li>
+                        <li><a href="datenschutz.html">Datenschutz</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -82,7 +90,7 @@
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Für Partner</h4>
+                    <h4>F체r Partner</h4>
                     <ul>
                         <li><a href="#">Partner-Login</a></li>
                         <li><a href="#">iOS App</a></li>
@@ -103,7 +111,48 @@
     </footer>
  
 
-   <script src="gallery.js"></script>
+   <script>
+    
+const navSlide = () => {
+   const menuIcon = document.querySelector('#menu-icon');
+   const nav = document.querySelector('.navbar');
+   const navbar = document.querySelectorAll('.navbar li');
+
+   menuIcon.addEventListener('click', () => {
+      nav.classList.toggle('nav-active');
+
+      navbar.forEach((link, index) => {
+
+         if (link.style.animation) {
+            link.style.animation = '';
+         } else {
+            link.style.animation = `navLinkFade 0.5 ease forwards ${index / 7 + 0.3}s`;
+         }
+      });
+   });
+
+   
+}
+
+navSlide();
+
+
+var fullImgBox = document.getElementById("fullImgBox")
+var fullImg = document.getElementById("fullImg")
+
+function openFullImg(pic) {
+   fullImgBox.style.display = "flex";
+   fullImg.src = pic
+}
+
+function closeFullImg() {
+   fullImgBox.style.display = "none";
+}
+
+
+
+
+   </script>
 
      
 </body>
