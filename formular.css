@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Maven+Pro:wght@400;500;700&family=UnifrakturMaguntia&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -33,6 +35,19 @@ body {
 
 
 
+h1 {
+  font-size: 35px;
+  text-align: center;
+  align-items: center;
+  color: var(--primary-color);
+  padding: 20px;
+}
+
+.tel {
+  text-align: center;
+  align-items: center;
+}
+
 header {
   display: flex;
   justify-content: space-around;
@@ -65,7 +80,7 @@ header {
  }
  
  .navbar a {
-     font-size: 1.6rem;
+     font-size: 1.2rem;
      padding: 20px 40px;
      color: white;
      font-weight: 700;
@@ -86,6 +101,11 @@ header {
  .navbar a:hover::after {
      width: 100%;
  }
+
+ .buchen {
+  visibility: hidden;
+ }
+
  
  #menu-icon {
      font-size: 24px;
@@ -164,19 +184,20 @@ transition: var(--transition-2);
 
 .btn2-hover:is(:hover, :focus)::after { --scale: 500; }
  
-
-
+h1 {
+  padding-top: 2em;
+}
 
   form {
     margin: 10px auto;
-    margin-top: 10rem;
+    margin-top: 7rem;
     padding: 10px 20px;
     background: #f4f7f8;
     border-radius: 8px;
     max-width: 500px;
   }
   
-  h1 {
+  h2 {
     margin: 0 0 30px 0;
     text-align: center;
   }
@@ -255,6 +276,14 @@ transition: var(--transition-2);
     border-radius: 100%;
   }
 
+  .flatpickr-time .numInputWrapper {
+    width: 50px;
+}
+
+.flatpickr-time .numInputWrapper:nth-child(3),
+.flatpickr-time .numInputWrapper:nth-child(4) {
+    display: none;
+}
 
 
   .footer {
@@ -363,14 +392,17 @@ ul {
 
   .logo { 
     font-family: 'Yeseva One', cursive;
-   font-size: 48px;
+   font-size: 30px;
    margin-top: 0.5rem;
     color: white;   
 }
 
-.navbar a {
-  font-size: 1rem;
-}
+  .navbar a {
+        font-size: 0.8rem;
+        padding: 20px 30px;
+        color: white;
+        font-weight: 500; 
+    }
 
 form {
   margin-top: 1rem;
@@ -384,11 +416,9 @@ form {
 
 @media (max-width: 1640px) {
   .navbar a {
-    font-size: 17px;
-    padding-left: 0px; 
-    padding: 6px 20px;
-    width: 100px;
-}
+        padding-left: 20px; 
+        padding: 10px 20px;
+    }
 
 
 }
@@ -398,14 +428,17 @@ form {
   }
 }
 
+@media (max-width: 1300px) {
+    .navbar a {
+        font-size: 0.7rem;
+        padding: 10px 15px;
+    }
+
+}
+
 @media (max-width: 1110px) {
 
-  .navbar a {
-      font-size: 17px;
-      padding-left: 0px; 
-      padding: 6px 20px;
-      width: 100px;
-  }
+
   .header-btn .sign-in {
     padding: 7px 3px;
     font-size: 2rem;
@@ -423,7 +456,6 @@ form {
     background-color: black;
     display: flex;
     width: 70%;
-    
     display: inline-block;
     text-align: center;
     vertical-align: middle;
@@ -448,6 +480,11 @@ form {
          opacity: 0;
          padding-bottom: 26px;
      }
+
+     .buchen {
+      visibility: visible;
+     }
+
      
      
      #menu-icon {
@@ -461,7 +498,7 @@ form {
 
     .logo {
       display: block;
-   margin-left: auto;
+   margin-left: 4rem;
    margin-right: auto;
      font-size: 40px;
   }
@@ -494,6 +531,11 @@ form {
  .see-container {
      display: none;
  }
+
+
+ h1 {
+ margin-top: 7rem;
+}
 
  form {
   margin-top: 5rem;
@@ -539,7 +581,7 @@ to{
           display: inline-block;
           text-align: center;
           vertical-align: middle;
-          line-height: 90px;
+          line-height: 30px;
           transform: translateX(100%);
           transition: transform 0.5s ease-in;
           z-index: 1000;
@@ -552,7 +594,10 @@ to{
            
          
       
-      
+            .warning {
+   margin-top: 4rem;
+  }
+
            
            header {
       
@@ -573,6 +618,11 @@ to{
           .logo {
             font-size: 30px;
         }
+
+        h1 {
+          padding-top: 0.5em;
+        }
+        
       
       
         .footer {
@@ -602,6 +652,16 @@ to{
       @media (max-width: 480px)  {
         .logo {
           font-size: 22px;
+          margin-left: auto;
+       }
+
+       h1 {
+        font-size: 25px;
+        font-weight: 800;
+       }
+
+       .tel {
+        font-size: 12px;
        }
       }
     
