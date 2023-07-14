@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Maven+Pro:wght@400;500;700&family=UnifrakturMaguntia&display=swap');
 
 * {
@@ -22,10 +23,7 @@
 
 
 
-<<<<<<< HEAD
-=======
 
->>>>>>> c2797fa093042ac87f0724f16abb0490804e9f2d
 body {
     background-color:#f3f3f3 ;
 }
@@ -62,7 +60,7 @@ header {
        font-family: 'Yeseva One', cursive;
       font-size: 64px;
        color: white;   
-       margin-left: -4rem;
+     margin-left: -4rem;  
    }
    
    
@@ -81,7 +79,7 @@ header {
    }
    
    .navbar a {
-       font-size: 1.2rem;
+       font-size: 1rem;
        padding: 20px 40px;
        color: white;
        font-weight: 700;
@@ -362,8 +360,6 @@ header {
     height: 700px;
 }
 
-<<<<<<< HEAD
-=======
 .video-container {
     display: flex;
     justify-content: center;
@@ -373,7 +369,6 @@ header {
   
 
 
->>>>>>> c2797fa093042ac87f0724f16abb0490804e9f2d
 
 .about-text span {
     font-weight: 600;
@@ -541,9 +536,8 @@ ul {
        font-size: 30px;
        margin-top: 0.5rem;
         color: white;   
-        margin-left: -2rem;
+       margin-left: -2rem; 
     }
-
     
     .navbar a {
         font-size: 0.8rem;
@@ -571,15 +565,12 @@ ul {
      margin: 0.5rem 0 1.4rem;
      font-size: 1.2rem;
  }
-
-<<<<<<< HEAD
-=======
  
-.about-img img {
+ .about-img img {
     width: 80%;
 }
 
->>>>>>> c2797fa093042ac87f0724f16abb0490804e9f2d
+
  .about-img iframe {
     width: 800px;
     height: 400px;
@@ -640,22 +631,10 @@ ul {
         width: 100%;
      }
 
-<<<<<<< HEAD
-     .about-img iframe {
-        width: 600px;
-        height: 400px;
-=======
 }
 
 @media (max-width: 1460px) {
 
-
-    .logo { 
- 
-        margin-left: 1rem;
->>>>>>> c2797fa093042ac87f0724f16abb0490804e9f2d
-    }
-    
 
     .about-img img {
         width: 90%;
@@ -729,13 +708,12 @@ ul {
                 color: white;
             }
 
-            .logo {
+           .logo {
                 display: block;
              margin-left: 4rem;
              margin-right: auto;
                font-size: 40px;
             }
-  
             .btn {
               visibility: hidden;
             }
@@ -853,11 +831,7 @@ ul {
         display: inline-block;
         text-align: center;
         vertical-align: middle;
-<<<<<<< HEAD
-        line-height: 90px;
-=======
         line-height: 30px;
->>>>>>> c2797fa093042ac87f0724f16abb0490804e9f2d
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
         z-index: 1000;
@@ -959,18 +933,12 @@ ul {
 
 
 @media (max-width: 480px)  {
-
-<<<<<<< HEAD
-   .about-img {
-    padding-top: 2em;
-    margin-top: 3rem;
-}
-=======
-   .logo {
+      .logo {
  margin-left: auto;
  margin-right: auto;
  font-size: 22px;
 }
+   
    
       .about-img {
     padding-top: 0em;
@@ -986,7 +954,6 @@ ul {
     height: 300px;
 }
 
->>>>>>> c2797fa093042ac87f0724f16abb0490804e9f2d
 
 
   }
