@@ -765,6 +765,12 @@ h2 {
         padding: 10px 20px;
     }
 
+    
+    main {
+        max-width: 1500px;
+    }
+
+
     main p {
         font-size: 37px;
     }
