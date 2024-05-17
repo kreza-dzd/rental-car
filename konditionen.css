@@ -234,6 +234,18 @@ header {
     border-radius: 10px; 
 }
 
+.language-switcher {
+    display: flex;          /* Using Flexbox */
+    justify-content: end;   /* Aligning items to the end (right side) */
+    align-items: center;    /* Center items vertically */
+    padding-right: 10px;  
+}
+
+.language-switcher a {
+    margin-left: 5px;
+}
+
+
 main {
     width: 100%;
     max-width: 2250px;
@@ -717,7 +729,7 @@ h2 {
 @media(max-width: 1920px) {
     main {
         width: 100%;
-        max-width: 1800px;
+        max-width: 1760px;
         padding-top: 1em;
         margin-left: 3rem;
         font-size: 30px;
@@ -751,6 +763,10 @@ h2 {
     .navbar a {
         padding-left: 20px; 
         padding: 10px 20px;
+    }
+
+    main {
+        max-width: 1500px;
     }
 
     main p {
@@ -917,6 +933,14 @@ h2 {
         padding-top: 1em;
         margin-left: 1rem;
         font-size: 35px;
+    }
+
+    .language-switcher {
+        padding-top: 10px;  
+    }
+    
+    .language-switcher a {
+        margin-left: 5px;
     }
 
     td {
@@ -1224,6 +1248,12 @@ h2 {
         font-size: 35px;
     }
 
+    .language-switcher {
+        margin-left: 15rem;
+        display: inline-block; 
+    }
+    
+
     .tank-container::before,
 .tank-container::after,
 .middle-line::before {
@@ -1261,6 +1291,13 @@ td span {
 }
 
 @media only screen and (max-width: 600px) {
+
+    .language-switcher {
+        flex-direction: column;
+        width: 100%;
+     
+    }
+
     .fuel {
         font-size: 14px;
     }
@@ -1297,6 +1334,10 @@ td span {
         max-width: 510px;
         margin-left: 1rem;
         font-size: 35px;
+    }
+
+    .language-switcher {
+        display: inline-block; 
     }
 
 
@@ -1402,6 +1443,11 @@ td span {
      
     }
 
+    .language-switcher {
+        margin-left: 11rem;
+        padding-left: 2em;
+    }
+
     .fixed {
         width: 130px;
         font-size: 9px;
@@ -1432,6 +1478,13 @@ td span {
 
 
 @media (max-width: 360px)  {
+
+    
+    .language-switcher {
+        margin-left: 9rem;
+        display: inline-block; 
+        padding-left: 2em;
+    }
 
     .logo {
         font-size: 10px;
