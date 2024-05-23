@@ -155,9 +155,9 @@ header {
     background-color:#848c8c;
     padding: 5px 0;
     position: fixed;
-    top: 60px; /* Visina headera, prilagodite po potrebi */
+    top: 60px; 
     width: 100%;
-    z-index: 1000; /* Postavlja se iznad sadržaja ispod */
+    z-index: 1000; 
     text-decoration: none;
     margin-bottom: 10px;
 }
@@ -510,7 +510,7 @@ header {
 
         main {
             width: 100%;
-            margin-top: 4rem;
+        
         }
 
         .footer {
@@ -609,9 +609,6 @@ header {
                 font-size: 22px;
                }
 
-             .gallery {
-                margin-top: 3rem;
-            }
 
             .close-icon {
                 margin-top: 3rem;
