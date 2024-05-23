@@ -1251,6 +1251,7 @@ h2 {
     .language-switcher {
         margin-left: 15rem;
         display: inline-block; 
+        padding-top: 1.5em;
     }
     
 
