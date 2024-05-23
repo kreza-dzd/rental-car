@@ -80,6 +80,39 @@ header {
      z-index: 10001;
      display: none;  
  }
+
+ .horizontal-menu {
+  display: none;
+  overflow-x: auto;
+  white-space: nowrap;
+  background-color:#848c8c;
+  padding: 5px 0;
+  position: fixed;
+  top: 60px; 
+  width: 100%;
+  z-index: 1000; 
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.menu-item {
+  display: inline-block;
+  padding: 8px 20px;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+  text-decoration: none;
+  color: white; 
+}
+
+.menu-item a {
+  color: white;
+  font-size: 13.5px;
+}
+
+.menu-item:not(:last-child) {
+  border-right: 1px solid #ccc;
+}
  
   .buchen {
     visibility: hidden;
@@ -810,6 +843,16 @@ list-style: none;
               top: 2.7%;
               color: white;
           }
+
+             
+          .horizontal-menu {
+            display: flex;
+
+        }
+
+        .menu-item {
+            text-decoration: none;
+        }
           
             .buchen {
                     visibility: visible;
