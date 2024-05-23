@@ -1408,7 +1408,7 @@ td span {
 @media (max-width: 420px) {
 
     .logo {
-        font-size: 15px;
+        font-size: 13px;
         margin-bottom: -0.5rem;
         margin-left:  1.5rem;
        }
@@ -1439,7 +1439,7 @@ td span {
 
    
     .logo {
-      font-size: 14px;
+      font-size: 11px;
       padding-bottom: 0.5em;
      
     }
@@ -1468,7 +1468,7 @@ td span {
 @media (max-width: 380px)  {
   
     .logo {
-        font-size: 12px;
+        font-size: 10px;
      }
 
 
@@ -1488,7 +1488,7 @@ td span {
     }
 
     .logo {
-        font-size: 10px;
+        font-size: 9px;
       }
 
       .fixed {
