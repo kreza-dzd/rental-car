@@ -853,6 +853,10 @@ list-style: none;
         .menu-item {
             text-decoration: none;
         }
+
+        .heading {
+          padding-top: 2em;
+        }
           
             .buchen {
                     visibility: visible;
