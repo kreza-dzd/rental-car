@@ -833,6 +833,23 @@ list-style: none;
     
            }
 
+           
+           header {
+                
+            height: 60px;
+            width: 100%;
+            top: 0;
+            right: 0;
+            z-index: 1000;
+            display: flex;
+            position: fixed;
+            align-items: center;
+            justify-content: space-between;
+            background: black;
+            color: white;
+            padding: 0.938em 3.75em; 
+           }
+
   
            
            #menu-icon {
@@ -840,7 +857,7 @@ list-style: none;
               cursor: pointer;
               position: absolute;
               left: 8%;
-              top: 2.7%;
+              top: 15.7%;
               color: white;
           }
 
@@ -855,7 +872,7 @@ list-style: none;
         }
 
         .heading {
-          padding-top: 2em;
+          padding-top: 8em;
         }
           
             .buchen {
@@ -915,22 +932,11 @@ list-style: none;
        }
        
   
-  
+       a h4 {
+        margin-bottom: 1em;
+    }
        
-       header {
-  
-           height: 60px;
-           width: 100%;
-           top: 0;
-           right: 0;
-           z-index: 1000;
-           display: flex;
-           align-items: center;
-           justify-content: space-between;
-           background: black;
-           color: white;
-           padding: 15px 60px; 
-          }
+   
           
           .logo {
             font-size: 30px;
